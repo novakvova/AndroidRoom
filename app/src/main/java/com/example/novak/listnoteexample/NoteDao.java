@@ -12,7 +12,7 @@ import java.util.List;
 @Dao
 public interface NoteDao {
     @Insert
-    void Insert(Note note);
+    void insert(Note note);
     @Update
     void update(Note note);
 
