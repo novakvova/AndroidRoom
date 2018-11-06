@@ -20,6 +20,9 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
                 .inflate(R.layout.note_item, parent, false);
         return new NoteHolder(itemView);
     }
+    public Note getNoteAt(int position) {
+        return notes.get(position);
+    }
 
     @Override
     public void onBindViewHolder(@NonNull NoteHolder holder, int position) {
